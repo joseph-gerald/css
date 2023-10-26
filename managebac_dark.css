@@ -1,0 +1,751 @@
+.theme-red {
+	--f-primary-color: #ff4739;
+	--f-primary-color-hover: #b42318;
+	--f-primary-color-active: #b42318;
+	--f-primary-color-active-rgb: to-rgb(#b42318);
+	--f-secondary: #fecdca;
+	--f-secondary-text: #fda29b;
+	--f-text-color: #d92d20;
+	--f-light-bg: #fef3f2;
+	--f-light-bg: #353535;
+	--f-light-bg-hover: #fee4e2;
+	--text-colour: #eee;
+	--background-colour: #202020;
+	--accent-colour: #404040;
+	--secondary-colour: #252525;
+}
+
+:root {
+	--text-colour: white;
+}
+
+body,
+.fr-view.fr-element .fr-file > span,
+a,
+a:hover {
+	color: var(--text-colour);
+}
+
+.breadcrumbs:last-child {
+	padding: 0 0 10px;
+	background-color: transparent;
+	min-width: -webkit-max-content;
+	min-width: -moz-max-content;
+	min-width: max-content;
+}
+
+.theme-orange,
+.theme-red,
+.theme-aubergine {
+	background-color: var(--background-colour);
+}
+
+* {
+	border-color: var(--accent-colour) !important;
+	color: var(--text-colour) !important;
+}
+
+text {
+	fill: var(--text-colour) !important;
+}
+
+/* NOTIFICATIONS */
+.modal-message-notifications {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	backdrop-filter: blur(50px);
+	padding: 0;
+	width: 640px;
+}
+
+/* NOTIFICATIONS */
+.mn-timeline-wrapper {
+	scrollbar-width: thin !important;
+	scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* NOTIFICATION READER FRAME */
+/* HEADER / SENDER */
+.message-notifications .message-notifications-wrapper .message-notifications-content .item-info {
+	margin: -10px -15px 0;
+	padding: 10px 15px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid var(--accent-colour);
+	border-bottom-color: rgb(208, 213, 221);
+	min-height: 56px;
+}
+
+/* BACKGROUND */
+.message-notifications .message-notifications-wrapper .message-notifications-content {
+	height: 100%;
+	overflow: auto;
+	margin: 0 -15px 0 15px;
+	padding: 10px 15px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* MAIN CARD */
+.message-notifications .message-notifications-wrapper .message-notifications-content .mn-item-wrapper {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #d0d5dd;
+	border-top-color: rgb(208, 213, 221);
+	border-right-color: rgb(208, 213, 221);
+	border-bottom-color: rgb(208, 213, 221);
+	border-left-color: rgb(208, 213, 221);
+	border-radius: 6px;
+	background-color: var(--background-colour);
+	-webkit-box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+	box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+}
+
+/* DOWNLOAD BUTTON */
+.redactor-styles a[data-name]::after,
+.fr-view a[data-name]::after {
+	border: none;
+}
+
+/* NAV BAR COLOURS */
+.navbar-default {
+	background-color: var(--background-colour);
+	border-color: var(--accent-colour);
+}
+
+/* NAV BAR TITLE (SCHOOL NAME) */
+.navbar .navbar-header .school-name,
+.navbar .navbar-header .navbar-brand {
+	color: var(--text-colour);
+}
+
+/* NAV BAR ICONS */
+.navbar .fi:not(.preserve-icon-color) path {
+	fill: var(--text-colour);
+}
+
+/* NAV BAR SEARCH */
+.global-search .global-search-modal:not(.active) input {
+	background-color: #303030 !important;
+	color: #101828;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+
+/* SIDE BAR */
+.f-menu-nav {
+	background-color: var(--background-colour);
+}
+
+/* SIDE BAR BUTTONS */
+.f-menu-link,
+.f-menu-link:focus {
+	--f-menu-link-bg: #303030;
+	text-decoration: none;
+	color: var(--text-colour);
+}
+
+/* SIDE BAR BUTTONS */
+.f-menu-link:hover,
+.f-menu-link:focus {
+	--f-menu-link-bg: var(--accent-colour);
+	text-decoration: none;
+	color: var(--text-colour);
+}
+
+/* SELECTED MODE (DASHBOARD, TIMETABLES, ETC) */
+.f-menu-submenu-link:focus,
+.f-menu-submenu-link.active {
+	background-color: var(--f-primary-color-active);
+	color: var(--f-primary, var(--f-primary-color, #1570ef));
+}
+
+.f-menu-submenu-link:focus,
+.f-menu-submenu-link.active:hover {
+	background-color: color-mix(in srgb, var(--accent-colour), var(--f-primary-color-active));
+	color: var(--f-primary, var(--f-primary-color, #1570ef));
+}
+
+/* HOME BUTTON */
+.f-menu-expanded .f-menu-nav-link.active {
+	background-color: var(--f-light-bg, #eaf2fe);
+	color: var(--text-colour);
+}
+
+/* SUB HOME BUTTONS */
+.f-menu-submenu-link-title {
+	color: var(--text-colour) !important;
+}
+
+.f-menu {
+	--f-menu-background: none;
+}
+
+/* DASHBOARD */
+/* MAIN FRAME/DIV */
+main .content-wrapper .content-block {
+	padding: 0 15px;
+	background-color: var(--secondary-colour);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+	margin-bottom: 20px;
+}
+
+/* BUTTONS */
+/* MY FULL CALENDER */
+.btn-light {
+	background-color: var(--background-colour) !important;
+	border-color: var(--accent-colour);
+	color: var(--text-colour);
+}
+
+/* SELECTED MODE (Calender, Timetables) */
+.btn-light:active,
+.btn-light.active,
+.btn-light:focus,
+.btn-light.focus,
+.btn-light:focus:active,
+.btn-light.active:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:focus:active,
+.btn-secondary.active:focus {
+	background-color: unset !important;
+	-webkit-box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+	box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+	border-color: var(--f-primary-color, #1570ef);
+	color: var(--f-primary-color, #1570ef);
+}
+
+/* CURRENT DAY HIGHLIGHT */
+.two-weeks-calendar tbody td.day.today {
+	background-color: rgba(150, 30, 30, 0.1) !important;
+}
+
+/* CURRENT WEEK TABLE HIGHLIGHT */
+.table-striped > tbody > tr:nth-of-type(2n+1),
+.table-fusion > tbody > tr:nth-of-type(2n+1) {
+	background-color: rgba(20, 0, 0, 0.2);
+}
+
+/* SECOND WEEK TABLE HIGHLIGHT */
+.table-fusion > tbody > tr:nth-of-type(2n) {
+	background-color: rgba(20, 0, 0, 0.1);
+}
+
+/* TASK */
+.color-box {
+	--f-color-box-color: #475467;
+	--f-color-box-border-color: currentcolor;
+	--f-color-box-border-radius: 0px;
+	/* DEFAULT 6px */
+	--f-color-box-font-size: 14px;
+	--f-color-box-line-height: 20px;
+	--f-color-box-padding-x: 8px;
+	--f-color-box-padding-y: 4px;
+	--f-color-box-child-gap: 4px;
+	--f-color-box-after-opacity: 0.15;
+	--f-color-box-after-bg: currentcolor;
+	position: relative;
+	display: block;
+	color: var(--f-color-box-color);
+	background-color: rgba(50, 50, 50, 0.2);
+	border: 1px solid currentcolor;
+	border-radius: var(--f-color-box-border-radius);
+	font-size: var(--f-color-box-font-size);
+	line-height: var(--f-color-box-line-height);
+	padding-inline: var(--f-color-box-padding-x);
+	padding-block: var(--f-color-box-padding-y);
+}
+
+/* UPCOMING TASK */
+/* MAIN CARD */
+.fusion-card {
+	margin: 15px 0;
+	border: 1px solid var(--accent-colour);
+	border-radius: 8px;
+}
+
+/* HEADER */
+.fusion-card-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	gap: 10px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #d0d5dd;
+	border-bottom: 1px solid transparent;
+	padding: 15px;
+}
+
+
+/* CARDS */
+.fusion-card-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	gap: 10px;
+	position: relative;
+	border: 1px solid var(--secondary-colour);
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+/* DATE */
+.date-badge .day {
+	line-height: 1.666666625;
+	border: 1px solid var(--accent-colour);
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(166, 190, 220);
+	border-top: none;
+	font-size: 18px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-color: var(--secondary-colour);
+}
+
+/* TITLE / TASK NAME */
+.title a {
+	font-weight: 600;
+	color: var(--text-colour);
+}
+
+.title a:hover {
+	color: var(--text-colour);
+}
+
+/* TASK TAGS/LABELS */
+.label,
+.warning.btn.btn-light.check-completion-btn span:first-child,
+.form-actions input.warning.btn-light.check-completion-btn[type="submit"] span:first-child,
+.form-actions button.warning.btn-light.check-completion-btn[type="submit"] span:first-child,
+.warning.btn-light.check-completion-btn.pill span:first-child,
+.gradebook-completion-filter .warning.btn[data-gb-filter-name] span:first-child,
+.gradebook-completion-filter .form-actions input.warning[data-gb-filter-name][type="submit"] span:first-child,
+.form-actions .gradebook-completion-filter input.warning[data-gb-filter-name][type="submit"] span:first-child,
+.gradebook-completion-filter .form-actions button.warning[data-gb-filter-name][type="submit"] span:first-child,
+.form-actions .gradebook-completion-filter button.warning[data-gb-filter-name][type="submit"] span:first-child,
+.gradebook-completion-filter .warning.pill[data-gb-filter-name] span:first-child {
+	--f-label-bg: #475467;
+	position: relative;
+	display: inline-block;
+	font-size: 12px !important;
+	line-height: 16px !important;
+	padding: 1px 5px !important;
+	background-color: rgba(20, 20, 20, 0.1) !important;
+	border: 1px solid currentcolor;
+	border-radius: 6px;
+	color: var(--f-label-bg) !important;
+}
+
+/* SUBMISSION STATUS */
+.assignment-row .assessment,
+.short-assignment .assessment {
+	text-align: center;
+	padding: 6px 0;
+	border-left: 1px solid var(--accent-colour);
+	/* #d0d5dd */
+	background-color: transparent;
+	/* #fbfcfe */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+/* TASK TOOLTIPS */
+.popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1060;
+	display: none;
+	padding: 1px;
+	font-family: open sans, -apple-system, blinkmacsystemfont, segoe ui, roboto, helvetica neue, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.428571429;
+	line-break: auto;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	white-space: normal;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0.2);
+	/* #fff */
+	backdrop-filter: blur(30px);
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid var(--accent-colour);
+	/* #d0d5dd */
+	border-radius: 8px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.popover-content .popover-actions {
+	border-top: 1px solid var(--accent-colour);
+	margin: 0 -15px -10px;
+	padding: 10px 15px;
+	background-color: transparent;
+	min-height: 36px;
+}
+
+/* FILE SIZE */
+.fr-view.fr-element .fr-file > span .fr-file-size {
+	display: block;
+	font-size: 12px;
+	color: var(--text-colour);
+}
+
+/* CLASSES */
+/* UNIT CARDS */
+.fusion-card-list .fusion-card-item .fusion-card-item {
+	background: var(--secondary-colour);
+}
+
+/* ODD NUMEBRED RESOURCE */
+.stream-plans-container .sortable-stream .node:nth-child(2n+1):not(.js-favourite) {
+	background: var(--accent-colour);
+}
+
+/* TABS (TASKS & UNITS, CALENDER, DISCUSSIONS, FILES) */
+.main-tabs > li > a,
+.main-tabs > li > button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 5px;
+	padding: 25px;
+	background-color: rgba(0, 0, 0, 0.15);
+	border: 1px solid #d0d5dd;
+	border-top-color: rgb(208, 213, 221);
+	border-right-color: rgb(208, 213, 221);
+	border-bottom-color: rgb(208, 213, 221);
+	border-left-color: rgb(208, 213, 221);
+	border-radius: 6px;
+}
+
+.main-tabs > li > a:hover {
+	background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+/* TASKS & UNITS */
+/* CONTENT NAV */
+.content-navigation {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 29px auto;
+	margin: 20px 15px 0;
+	padding: 11px 15px 0;
+	background-color: var(--secondary-colour);
+	box-shadow: 1px 0 10px 0 rgba(41, 48, 65, .1);
+}
+
+/* COMPLETION CHART */
+.task-completion-chart-section {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	padding: 12px;
+}
+
+.task-completion-chart-section .task-completion-chart-component .task-chart-wrapper .task-chart {
+	background-color: transparent;
+	border-bottom: 1px solid #d0d5dd;
+	border-bottom-color: rgb(208, 213, 221);
+	display: inline-block;
+	margin-bottom: 30px;
+	min-width: 100%;
+	padding-top: 6px;
+	text-align: center;
+}
+
+/* CRITERIA CONTAINER (GRADES) */
+.task-completion-chart-section .myp-grade-distribution-chart .task-completion-chart-component .task-chart-wrapper .task-chart .task-chart-criteria-container {
+	background-color: var(--background-colour);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+	border-bottom-color: rgb(208, 213, 221);
+	display: inline-block;
+	height: 160px;
+	line-height: 148px;
+	margin-top: -6px;
+	padding-top: 12px;
+	position: relative;
+	vertical-align: bottom;
+}
+
+/* UPCOMING TASKS IMAGE ABOVE */
+.blank-slate-container:not(.white-bg)::before,
+.message-notifications .blank-slate-wrapper .blank-slate-background,
+.modal-message-notifications .blank-slate-wrapper .blank-slate-background {
+	background-image: url(https://thisisadomain.lol/background.png);
+	border-bottom: 1px solid var(--accent-colour);
+	background-repeat: repeat;
+	background-size: 150px !important;
+}
+
+/* UNIT SEARCH BAR */
+.form-actions,
+main .content-wrapper .content-block .content-panel {
+	background: var(--background-colour);
+	border-top: 1px solid #d0d5dd;
+	border-bottom: 1px solid #d0d5dd;
+	border-bottom-color: rgb(208, 213, 221);
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-top: 20px;
+}
+
+/* SEARCH FORM */
+.form-control,
+body.mobile #dnd-upload .js-multi-file {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #475467;
+	background-color: var(--secondary-colour) !important;
+	background-image: none;
+	border: 1px solid #c1c8d2;
+	border-top-color: rgb(193, 200, 210);
+	border-right-color: rgb(193, 200, 210);
+	border-bottom-color: rgb(193, 200, 210);
+	border-left-color: rgb(193, 200, 210);
+	border-radius: 6px;
+}
+
+/* TASK ON CLASS CALENDER*/
+.fc .fc-event {
+	--f-color-box-color: #475467;
+	--f-color-box-border-color: currentcolor;
+	--f-color-box-border-radius: 6px;
+	--f-color-box-font-size: 14px;
+	--f-color-box-line-height: 20px;
+	--f-color-box-padding-x: 8px;
+	--f-color-box-padding-y: 4px;
+	--f-color-box-child-gap: 4px;
+	--f-color-box-after-opacity: 0.15;
+	--f-color-box-after-bg: currentcolor;
+	position: relative;
+	display: block;
+	color: var(--f-color-box-color);
+	background-color: transparent;
+	border: 1px solid currentcolor;
+	border-radius: var(--f-color-box-border-radius);
+	font-size: var(--f-color-box-font-size);
+	line-height: var(--f-color-box-line-height);
+	padding-inline: var(--f-color-box-padding-x);
+	padding-block: var(--f-color-box-padding-y);
+}
+
+/* TASK CIRCLE */
+.highcharts-point {
+	stroke: transparent;
+}
+
+/* TODAY ON CLASS CALENDER */
+.fc-unthemed .fc-today {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* CHOSEN SIZE (MONTH OR WEEK) */
+.fc button.fc-state-active {
+	color: var(--f-primary-color, #1570ef);
+	border-color: var(--f-primary-color, #1570ef);
+	background-color: var(--background-colour) !important;
+	-webkit-box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+	box-shadow: 0 1.5px 2.5px rgba(0, 0, 0, .07);
+}
+
+
+
+/* IB MANAGER */
+/* NAV BAR */
+.stream-wrapper,
+.grid-nav-tile,
+.fusion-content-panel,
+.stream-plans {
+	background-color: var(--background-colour);
+	border-top: 1px solid #d0d5dd;
+	border-top-color: rgb(208, 213, 221);
+	border-bottom: 1px solid #d0d5dd;
+	border-bottom-color: rgb(208, 213, 221);
+	padding: 12px 15px;
+	margin: 0 -15px;
+}
+
+/* SA PROGRESS BAR */
+.progress {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+
+
+
+/* HOME */
+/* SIDE BAR */
+.landing .f-menu-narrow .f-menu-nav {
+	top: calc(73px);
+	min-height: calc(100vh - (89px));
+	background-color: var(--secondary-colour);
+	-webkit-box-shadow: 0 1px 3px rgba(16, 24, 40, .1), 0 1px 2px rgba(16, 24, 40, .06);
+	box-shadow: 0 1px 3px rgba(16, 24, 40, .1), 0 1px 2px rgba(16, 24, 40, .06);
+}
+
+.f-menu-narrow .f-menu-item:hover .f-menu-nav-link {
+	--f-menu-link-bg: var(--accent-colour) !important;
+}
+
+.f-menu-submenu {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	scrollbar-width: none;
+}
+
+/* CARDS */
+.home-page-customisation .fusion-card-item-with-widgets .widget-tile,
+.calendar-tile,
+.current-day,
+.members-wrapper.multi-item-carousel .member,
+.menu-tiles .item-row,
+.classes-list .item-row {
+	border: 1px solid #d0d5dd;
+	border-top-color: rgb(208, 213, 221);
+	border-right-color: rgb(208, 213, 221);
+	border-bottom-color: rgb(208, 213, 221);
+	border-left-color: rgb(208, 213, 221);
+	border-color: #fff;
+	background-color: var(--secondary-colour);
+	border-radius: 8px;
+	-webkit-box-shadow: 0 1px 10px 0 rgba(41, 48, 65, .05), 0 1px 4px 0 rgba(41, 48, 65, .1);
+	box-shadow: 0 1px 10px 0 rgba(41, 48, 65, .05), 0 1px 4px 0 rgba(41, 48, 65, .1);
+}
+
+/* HOME ROOM ATTENDANCE */
+.homeroom-attendance-component,
+.class-attendance-component {
+	background-color: transparent;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 5px 0 rgba(41, 48, 65, .05);
+	box-shadow: 0 0 5px 0 rgba(41, 48, 65, .05);
+}
+
+/* CALENDER WIDGET */
+.calendar-widget .events-list {
+	max-width: 60%;
+	padding: 15px;
+	border-left: 1px solid #d9e7f7;
+	border-left-color: rgb(217, 231, 247);
+	background-color: rgba(0, 0, 0, 0.1);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/* TIMETABLES WIDGET */
+.events-list .lesson-tile .event-bg {
+	background-color: var(--secondary-colour);
+}
+
+/* WIDGET ARROW */
+.current-day .calendar-arrow:hover,
+.current-day .calendar-arrow.carousel-control-prev:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+/* TIME TABLES */
+.timetable-wrapper #timetable thead {
+	background-color: transparent;
+	color: #475467;
+	font-size: 16px;
+	border-top: 1px solid #d0d5dd;
+	border-top-color: rgb(208, 213, 221);
+}
+
+/* PERIODS */
+.timetable-wrapper #timetable tbody > tr > td:first-child {
+	background-color: transparent;
+	border-left: none;
+	border-left-color: currentcolor;
+}
+
+/* CLASSES */
+.class-wrapper.flex.flex-column.flex-start.fusion-popover.unsanitize,
+.class-wrapper.homeroom.flex.fusion-popover.unsanitize {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* DEADLINES ON CLASS */
+.timetable-wrapper #timetable .class-wrapper .tasks-counter {
+	height: 20px;
+	width: 40px;
+	background-color: rgba(0, 0, 0, 0.2);
+	background: none;
+	color: #ee1d24;
+	padding: 0 8px;
+}
+
+.select2-container--bootstrap .select2-selection,
+.select2-dropdown {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	backdrop-filter: blur(20px);
+}
+
+/* DISCUSSIONS */
+.fr-toolbar {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+/* SPLIT */
+.fr-box .fr-toolbar .fr-newline {
+	background-color: var(--accent-colour);
+	margin: 0;
+}
+
+/* TEXT AREA */
+.fr-box.fr-basic .fr-wrapper {
+	background: rgba(0, 0, 0, 0.2);
+	border-color: var(--accent-colour) !important;
+}
