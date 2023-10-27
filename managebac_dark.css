@@ -6,17 +6,79 @@
 	--f-secondary: #fecdca;
 	--f-secondary-text: #fda29b;
 	--f-text-color: #d92d20;
-	--f-light-bg: #fef3f2;
-	--f-light-bg: #353535;
 	--f-light-bg-hover: #fee4e2;
+}
+
+.theme-aubergine,
+.theme-orange,
+.theme-red {
+	--f-light-bg: #353535;;
+	--f-light-bg-hover: #252525;
+}
+
+:root {
 	--text-colour: #eee;
 	--background-colour: #202020;
 	--accent-colour: #404040;
 	--secondary-colour: #252525;
+	--f-light-bg: #353535;
 }
 
-:root {
-	--text-colour: white;
+.flash.notice > .flash-body,
+.flash.notice > .flash-body * {
+	color: var(--accent-colour) !important;
+}
+
+.background-image {
+	background-image: url(https://4kwallpapers.com/images/wallpapers/blob-background-ios-stock-orange-curves-digital-art-vectors-5120x2880-6789.jpg) !important;
+	filter: blur(20px);
+}
+
+/* TASK POPUP FADE */
+.show-more.active.active::after,
+.show-more.small-active.active::after {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	content: '...';
+}
+
+/* PROFILE DROP DOWN */
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	margin-top: 2px;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(25px);
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-top-color: rgba(0, 0, 0, 0.15);
+	border-right-color: rgba(0, 0, 0, 0.15);
+	border-bottom-color: rgba(0, 0, 0, 0.15);
+	border-left-color: rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	overflow: hidden !important;
+}
+
+/* PERSONALIZATION */
+.form-section .section-full-width {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.js-flash-area .flash.info {
+	background-color: rgba(0,0,0,0.2);
 }
 
 body,
@@ -351,7 +413,12 @@ main .content-wrapper .content-block {
 	background-color: rgba(20, 20, 20, 0.1) !important;
 	border: 1px solid currentcolor;
 	border-radius: 6px;
-	color: var(--f-label-bg) !important;
+	color: var(--f-label-bg);
+}
+
+/* CLASS RESOURCES */
+.cell.count.btn.btn-fake.btn-sm {
+	color: rgb(20, 20, 20) !important;
 }
 
 /* SUBMISSION STATUS */
@@ -496,6 +563,32 @@ main .content-wrapper .content-block {
 	min-width: 100%;
 	padding-top: 6px;
 	text-align: center;
+}
+
+/* PROJECTS */
+/* MAIN PROJECT CARD */
+.projects-wrapper .project-section,
+.project-section .blank-slate-wrapper {
+	background-color: var(--background-colour);
+	border: none;
+}
+
+.profile .reflection-content .blank-slate-wrapper .blank-slate-background,
+.profile .academic-content .blank-slate-wrapper .blank-slate-background,
+.profile .report-content .blank-slate-wrapper .blank-slate-background,
+.course-request-status-bs-wrapper .blank-slate-wrapper .blank-slate-background,
+.project-section .blank-slate-wrapper .blank-slate-background {
+
+	background-image: url(https://thisisadomain.lol/background.png);
+	border-color: var(--accent-colour);
+}
+
+/* INFO, ACTIONS, DIVIDER */
+.projects-wrapper .project-content,
+.projects-wrapper .project-section .project-actions,
+.double-divider {
+	background-color: transparent;
+	/* #fff */
 }
 
 /* CRITERIA CONTAINER (GRADES) */
@@ -731,6 +824,28 @@ body.mobile #dnd-upload .js-multi-file {
 	background-color: rgba(0, 0, 0, 0.2);
 	color: white;
 	backdrop-filter: blur(20px);
+}
+
+/* GRADES */
+.highcharts-background {
+	fill: transparent;
+}
+
+/* GRADE TOOLTIP */
+.highcharts-label.highcharts-tooltip.highcharts-color-undefined {
+	backdrop-filter: blur(30px);
+}
+
+/* TOOLTIP BOX */
+.highcharts-label-box.highcharts-tooltip-box {
+	fill: rgba(30,30,30,0.5);
+}
+
+/* TERM SELECTED FOR GRADES */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #1570ef;
+  cursor: default;
+  background-color: var(--secondary-colour);
 }
 
 /* DISCUSSIONS */
