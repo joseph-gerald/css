@@ -864,3 +864,51 @@ body.mobile #dnd-upload .js-multi-file {
 	background: rgba(0, 0, 0, 0.2);
 	border-color: var(--accent-colour) !important;
 }
+
+
+/* STUDY MODE */
+
+/* HEADER */
+/* BACKGROUND */
+.study-mode .unit-container {
+	background-color: var(--background-colour);
+}
+/* FOREGROUND */
+.study-mode .unit-container .fusion-card-item {
+	background-color: var(--secondary-colour)
+}
+
+/* STREAM & RESOURCES */
+/* SECTION TITLE */
+
+.left-side .side-container > h3 {
+	background-color: rgb(20,20,20);
+}
+
+.presentation-page main .left-side {
+	background-color: var(--backgrouond-colour);
+}
+
+
+/* CONTENT PANEL */
+.panel {
+	background-color: var(--secondary-colour);
+}
+
+/* PANEL HEADING */
+.panel-default > .panel-heading {
+	background-color: var(--background-colour);
+}
+
+/* TOOLBAR */
+.mode-toolbar {
+	background: var(--background-colour);
+	
+}
+
+/* TOOLBAR BUTTON */
+.btn-light {
+	background: rgba(0,0,0,0.3) !important;
+}
+
+
