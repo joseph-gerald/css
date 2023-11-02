@@ -16,12 +16,37 @@
 	--f-light-bg-hover: #252525;
 }
 
+/* TIME TABLE BALL */
+
+.timetable-wrapper #timetable .today {
+	background-color: var(--f-light-bg);
+	border: none;
+	border-radius: 5px;
+	height: auto;
+	transform: translatey(-1.5px);
+}
+
+/* TIME TABLE BORDER */
+.timetable-wrapper #timetable .class-wrapper .cover-bg {
+	border-color: inherit !important;
+}
+
 :root {
 	--text-colour: #eee;
 	--background-colour: #202020;
 	--accent-colour: #404040;
 	--secondary-colour: #252525;
 	--f-light-bg: #353535;
+}
+
+.sidebar-box-item,
+.reference-guides,
+.timetable-wrapper #timetable tfoot > tr > td:first-child {
+	background-color: rgba(100,100,100,0.175);
+}
+
+.table > thead > tr > th.active {
+	background-color: var(--f-primary-color-active)
 }
 
 .flash.notice > .flash-body,
